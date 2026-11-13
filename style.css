@@ -1,0 +1,152 @@
+
+
+/* ===== GENERAL PAGE DESIGN ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #090909, #24201A, #101010);
+    font-family: Arial, sans-serif;
+    color: #EEE7D9;
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* ===== MAIN PROFILE CARD ===== */
+
+.profile-card {
+    background: linear-gradient(145deg, #211F1B, #151515);
+    width: 90%;
+    max-width: 760px;
+    margin: 20px auto;
+    padding: 40px;
+    border: 1px solid #8D7447;
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== MAIN HEADING ===== */
+
+h1 {
+    color: #D6B875;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+/* ===== SECTION HEADINGS ===== */
+
+h2 {
+    color: #D6B875;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8D7447;
+}
+
+/* ===== PARAGRAPHS ===== */
+
+p {
+    color: #D5CEC0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.intro {
+    text-align: justify;
+}
+
+/* ===== SKILLS AND INTERESTS ===== */
+
+ul {
+    background-color: #29251E;
+    padding: 22px 22px 22px 45px;
+    border-radius: 12px;
+    border: 1px solid #51442F;
+}
+
+li {
+    color: #EEE3CE;
+    font-family: Arial, sans-serif;
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+li:hover {
+    color: #E1C27D;
+}
+
+/* ===== PROFILE PICTURE FRAME ===== */
+
+.profile-image {
+    width: 210px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 3px solid #D6B875;
+    display: block;
+    margin: 25px auto;
+    padding: 5px;
+    background-color: #29251E;
+    box-shadow: 0 8px 25px rgba(201, 166, 94, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.04);
+}
+
+/* ===== HYPERLINK STYLING ===== */
+
+a {
+    display: inline-block;
+    color: #E1C27D;
+    background-color: #29251E;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border: 1px solid #8D7447;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #151515;
+    background-color: #D6B875;
+    border-color: #D6B875;
+    transform: translateY(-3px);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .profile-card {
+        width: 100%;
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .profile-image {
+        width: 170px;
+        height: 190px;
+    }
+}
